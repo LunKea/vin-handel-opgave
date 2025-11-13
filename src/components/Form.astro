@@ -1,0 +1,32 @@
+---
+import Button from "./Button.astro";
+---
+
+<section class="min-w-full ml-25">
+  <h2 class="text-3xl font-bold mb-10">Got a question?</h2>
+
+  <div class="border-4 border-primary w-250">
+    <p class="absolute -translate-y-5 font-bold bg-base-100 ml-3 p-2">
+      Contact Costumer Service
+    </p>
+    <div class="mt-5 px-5">
+      <p class="font-bold">Name</p>
+      <form action="input" class="mt-1 w-full">
+        <input type="text" class="w-full" value="Name" />
+      </form>
+    </div>
+
+    <div class="mt-5 w-full px-5">
+      <p class="font-bold">E-mail</p>
+
+      <form action="input" class="mt-1">
+        <input type="text" class="w-full" value="youremail@gmail.com" />
+      </form>
+
+      <form action="" class="mt-5">
+        <input class="w-full p-10" type="text" value="Ask your question" />
+      </form>
+    </div>
+    <button class="btn btn-primary btn-block my-5">Send Question!</button>
+  </div>
+</section>

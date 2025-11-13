@@ -1,127 +1,201 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
-import Card from '../components/Card.astro';
-
+import Card from "../components/Card.astro";
+import Form from "../components/Form.astro";
 ---
+
 <MainLayout title="Titel">
-	<section>
-<div class="hero min-h-[66vh]" style="background-image: url('/images/exclusive-wine.jpg');">
-  <div class="hero-overlay"></div>
-  <div class="hero-content text-neutral-content text-center">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Exclusive wine</h1>
-      <p class="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button class="btn btn-primary">Order now</button>
+  <section>
+    <div
+      class="hero min-h-[66vh]"
+      style="background-image: url('/images/exclusive-wine.jpg');"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Exclusive wine</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+          <button class="btn btn-primary">Order now</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-	</section>
+  </section>
 
-	<section class="flex justify-center">
-		<div class="stats stats-vertical lg:stats-horizontal shadow">
-  <div class="stat">
-    <div class="stat-title">Downloads</div>
-    <div class="stat-value">31K</div>
-    <div class="stat-desc">Jan 1st - Feb 1st</div>
-  </div>
+  <section class="flex justify-center mb-10 mt-10">
+    <div class="stats stats-vertical lg:stats-horizontal shadow">
+      <div class="stat">
+        <div class="stat-title">Downloads</div>
+        <div class="stat-value">31K</div>
+        <div class="stat-desc">Jan 1st - Feb 1st</div>
+      </div>
 
-  <div class="stat">
-    <div class="stat-title">New Users</div>
-    <div class="stat-value">4,200</div>
-    <div class="stat-desc">↗︎ 400 (22%)</div>
-  </div>
+      <div class="stat">
+        <div class="stat-title">New Users</div>
+        <div class="stat-value">4,200</div>
+        <div class="stat-desc">↗︎ 400 (22%)</div>
+      </div>
 
-  <div class="stat">
-    <div class="stat-title">New Registers</div>
-    <div class="stat-value">1,200</div>
-    <div class="stat-desc">↘︎ 90 (14%)</div>
-  </div>
-</div>
-	</section>
+      <div class="stat">
+        <div class="stat-title">New Registers</div>
+        <div class="stat-value">1,200</div>
+        <div class="stat-desc">↘︎ 90 (14%)</div>
+      </div>
+    </div>
+  </section>
 
   <section class="flex flex-col items-center max-w-4xl mx-auto">
-    <h2 class="w-full mx-auto text-left text-2xl font-semibold">Thirsty for a glass?</h2>
+    <h2 class="w-full mx-auto text-left text-2xl font-semibold">
+      Thirsty for a glass?
+    </h2>
     <section class="items-center my-10">
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
-		</div>
-		</section>
-	</section>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-4xl mx-auto"
+      >
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </section>
+  </section>
 
-	
   <section class="max-w-xl mx-auto">
-    <h2 class="text-left text-2xl font-semibold">Thirsty for a subscription?</h2>
+    <h2 class="text-left text-2xl font-semibold">
+      Thirsty for a subscription?
+    </h2>
     <section class="my-10 gap-5 md:flex">
-		<div class="card w-full bg-base-300 shadow-sm">
-				<div class="card-body min-w-80">
-					<span class="badge badge-xs badge-warning">Most Popular</span>
-					<div class="flex justify-between">
-					<h2 class="text-3xl font-bold">Bit thirsty</h2>
-					<span class="text-xl">$29/mo</span>
-					</div>
-					<ul class="mt-6 flex flex-col gap-2 text-xs">
-					<li>
-						<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-						<span>High-resolution image generation</span>
-					</li>
-					<li>
-						<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-						<span>Customizable style templates</span>
-					</li>
-					<li>
-						<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-						<span>Batch processing capabilities</span>
-					</li>
+      <div class="card w-full bg-base-300 shadow-sm">
+        <div class="card-body min-w-80">
+          <span class="badge badge-xs badge-warning">Most Popular</span>
+          <div class="flex justify-between">
+            <h2 class="text-3xl font-bold">Bit thirsty</h2>
+            <span class="text-xl">$29/mo</span>
+          </div>
+          <ul class="mt-6 flex flex-col gap-2 text-xs">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              <span>High-resolution image generation</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              <span>Customizable style templates</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              <span>Batch processing capabilities</span>
+            </li>
+          </ul>
+          <div class="mt-6">
+            <button class="btn btn-primary btn-block">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full bg-base-300 shadow-sm">
+        <div class="card-body min-w-80">
+          <span class="badge badge-xs badge-warning">Most Popular</span>
+          <div class="flex justify-between">
+            <h2 class="text-3xl font-bold">Very thirsty</h2>
+            <span class="text-xl">$49/mo</span>
+          </div>
+          <ul class="mt-6 flex flex-col gap-2 text-xs">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              <span>High-resolution image generation</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              <span>Customizable style templates</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              <span>Batch processing capabilities</span>
+            </li>
+          </ul>
+          <div class="mt-6">
+            <button class="btn btn-primary btn-block">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 
-
-					</ul>
-					<div class="mt-6">
-					<button class="btn btn-primary btn-block">Subscribe</button>
-					</div>
-				</div>
-		</div>
-		<div class="card w-full bg-base-300 shadow-sm">
-		<div class="card-body min-w-80">
-			<span class="badge badge-xs badge-warning">Most Popular</span>
-			<div class="flex justify-between">
-			<h2 class="text-3xl font-bold">Very thirsty</h2>
-			<span class="text-xl">$49/mo</span>
-			</div>
-			<ul class="mt-6 flex flex-col gap-2 text-xs">
-			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-				<span>High-resolution image generation</span>
-			</li>
-			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-				<span>Customizable style templates</span>
-			</li>
-			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-				<span>Batch processing capabilities</span>
-			</li>
-	
-			</ul>
-			<div class="mt-6">
-			<button class="btn btn-primary btn-block">Subscribe</button>
-			</div>
-		</div>
-		</div>
-		
-	</section>
-	
+  <Form />
 </MainLayout>
